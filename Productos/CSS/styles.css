@@ -1,0 +1,27 @@
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.btn-primary
+{
+    background-color: #B8977E;
+}
+.dropdown-item:hover {
+    background-color: #B8977E !important;
+}
+nav .navbar-nav li a{
+    color: white !important; 
+}
+
+nav
+{
+    background-color: #5F8D7F;
+}
+.navbar-brand{
+    color:white !important;
+  }
+.navbar-nav > 
+    li > 
+        .dropdown-menu { background-color: #5F8D7F; }
+

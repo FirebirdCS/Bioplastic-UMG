@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../Contacto/CSS/styles.css">
+    <link rel="shortcut icon" href="../Images/logo sl.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Bioplast - Contactos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">
+                <img src="../Images/logo sl.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Bioplast
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Beneficios.html">Beneficios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Materiales.html">Materiales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Sobre nosotros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Nosotros.html" class="dropdown-item"> Nuestro Proyecto </a></li>
+                                <li><a href="contact.html" class="dropdown-item"> Contacto </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>  
+    </nav>
+    <!-- Seccion de contacto-->
+    <section class="p-5" style="background-color: #B8977E">
+        <div class="container">
+            <div class="row g-4 aling-items-center justify-content-between">
+                <div class="col-md">
+                    <h2 class="text-center text-light mb-4">Contacta a los expertos</h2>
+                    <img src="../Images/Nature2.jpg" class="img-fluid w-100" alt="">
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item text-light"><span class="fw-bold text-light">Dirección: </span>5ta. Avenida Guatemala</li>
+                        <li class="list-group-item text-light"><span class="fw-bold text-light">Telefono: </span>25406620</li>
+                        <li class="list-group-item text-light"><span class="fw-bold text-light">Correo: </span>bioplast@bioplast.org</li>
+                    </ul>
+                </div>
+                <div class="col-md text-center justify-content">
+                    <h2 class="text-center text-light">Mandanos un mensaje</h2>
+                    <div class="form-floating mb-3 mt-4">
+                        <input type="text" class="form-control mb-3" id="firstName" placeholder="">
+                        <label for="firstName">Nombre</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control mb-3" id="secondName" placeholder="">
+                        <label for="secondName">Apellido</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control mb-3" id="phoneNumber" placeholder="">
+                        <label for="phoneNumber">Telefono</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control mb-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control mb-3" placeholder="Deja tu mensaje" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Mensaje</label>
+                    </div>
+                    <button type="button" class="btn btn-light" onclick="ClearFields();" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                                  <!--Modal para envio-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Enhorabuena</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="lead">Se ha enviado tu mensaje!</p>
+                              <img src="../Images/Personas.jpg" class="img-fluid w-100" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+        <div class="container">
+            <p class="lead"> Copyright &copy; 2022 </p>
+            <p class="lead"> Creado por Grupo #5 </p>
+              <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                  <i class="bi bi-arrow-up-circle h1"></i>
+              </a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../Contacto/index.js" ></script>
+</html>
