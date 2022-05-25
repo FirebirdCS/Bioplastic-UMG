@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../Contacto/CSS/styles.css">
     <link rel="shortcut icon" href="../Images/logo sl.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -44,9 +45,9 @@
         <div class="container">
             <div class="row g-4 aling-items-center justify-content-between">
                 <div class="col-md">
-                    <h2 class="text-center text-light mb-4">Contacta a los expertos</h2>
-                    <img src="../Images/Nature2.jpg" class="img-fluid w-100" alt="">
-                    <ul class="list-group list-group-flush lead">
+                    <h2 class="text-center text-light mb-4"  data-aos-duration="500" data-aos-mirror="true" data-aos="fade-left">Contacta a los expertos</h2>
+                    <img src="../Images/Nature2.jpg" class="img-fluid w-100" alt=""  data-aos-duration="500" data-aos-mirror="true" data-aos="fade-left">
+                    <ul class="list-group list-group-flush lead"  data-aos-duration="500" data-aos-mirror="true" data-aos="fade-left">
                         <li class="list-group-item text-light"><span class="fw-bold text-light">Dirección: </span>5ta. Avenida Guatemala</li>
                         <li class="list-group-item text-light"><span class="fw-bold text-light">Telefono: </span>25406620</li>
                         <li class="list-group-item text-light"><span class="fw-bold text-light">Correo: </span>bioplast@bioplast.org</li>
@@ -106,4 +107,30 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../Contacto/index.js" ></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 </html>
